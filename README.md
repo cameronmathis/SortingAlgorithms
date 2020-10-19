@@ -9,7 +9,7 @@ This repository contains most of the sorting algorithms I know.
 * [Contact](#contact)
 
 ## General info
-This is a project I did in order to practice implementing sorting algorithms in Java.
+This is a project I did in order to practice implementing sorting algorithms in Java. In order to run and learn more about each algorithm, navigate to the appropriate algorithm folder.
 
 ## Sorting algorithms
 Implemented:
