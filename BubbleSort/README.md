@@ -1,5 +1,5 @@
-# SelectionSort
-This the implementation of the Selection Sort Sorting Algorithm in Java.
+# BubbleSort
+This the implementation of the Bubble Sort Sorting Algorithm in Java.
 
 ## Table of contents
 * [Algorithm details](#Algorithm-details)
@@ -9,7 +9,7 @@ This the implementation of the Selection Sort Sorting Algorithm in Java.
 * [Contact](#contact)
 
 ## Algorithm details
-Selection sort works by repeatedly finding the minimum element from an unsorted portion of the array and putting it at the beginning. Selection Sort always runs in O(n^2) time complexity and has an auxiliary space complexity of O(1).
+Bubble Sort works by repeatedly swapping the adjacent elements if they are in wrong order. Bubble Sort usually runs in O(n^2) time complexity, but runs in O(n) time complexity if the array is already sorted. It has an auxiliary space complexity of O(1).
 
 ## Setup
 In order to run, clone this repo onto your local machine. Once you have navigated to the project folder, run the command:

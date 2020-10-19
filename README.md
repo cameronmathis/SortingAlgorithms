@@ -14,13 +14,14 @@ This is a project I did in order to practice implementing sorting algorithms in 
 ## Sorting algorithms
 Implemented:
 * Selection Sort
+* Bubble Sort
 
 ## Status
 Project is: _in progress_
 
 ## Language details
 Language used: Java </br>
-Version used: 1.8.0_265
+OpenJDK Version used: 1.8.0_265
 
 ## Contact
 Created by [@cameronmathis](https://github.com/cameronmathis/) - feel free to contact me!
