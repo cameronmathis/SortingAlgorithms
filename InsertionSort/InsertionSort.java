@@ -1,6 +1,8 @@
+package InsertionSort;
+
 public class InsertionSort {
     // Function to sort array using insertion sort
-    private void sort(int arr[]) { 
+    public void sort(int arr[]) { 
         int n = arr.length; 
         for (int i = 1; i < n; ++i) { 
             int key = arr[i]; 

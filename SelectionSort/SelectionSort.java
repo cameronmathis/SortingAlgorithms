@@ -1,6 +1,8 @@
-class SelectionSort { 
+package SelectionSort;
+
+public class SelectionSort { 
     // Function to sort array using selection sort
-    private void sort(int arr[]) { 
+    public void sort(int arr[]) { 
         int n = arr.length; 
   
         // One by one move boundary of unsorted subarray 

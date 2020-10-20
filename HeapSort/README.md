@@ -1,5 +1,5 @@
-# BubbleSort
-This the implementation of the Bubble Sort Sorting Algorithm in Java.
+# HeapSort
+This the implementation of the Heap Sort Sorting Algorithm in Java.
 
 ## Table of contents
 * [Algorithm details](#Algorithm-details)
@@ -9,7 +9,7 @@ This the implementation of the Bubble Sort Sorting Algorithm in Java.
 * [Contact](#contact)
 
 ## Algorithm details
-Bubble Sort works by repeatedly swapping the adjacent elements if they are in wrong order. Bubble Sort usually runs in O(n^2) time complexity, but runs in O(n) time complexity if the array is already sorted. It has an auxiliary space complexity of O(1). Bubble sort is a stable sorting algorithm.
+Heap sort works similar to selection sort where by first finding the maximum element and placing the maximum element at the end of the array. It repeats the same process for the remaining elements. Heap Sort runs in O(nLog(n)) time complexity and has an auxiliary space complexity of O(1). Heap sort is an unstable sorting algorithm.
 
 ## Setup
 In order to run, clone this repo onto your local machine. Once you have navigated to the project folder, run the command:

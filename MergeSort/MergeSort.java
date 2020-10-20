@@ -1,4 +1,6 @@
-class MergeSort { 
+package MergeSort;
+
+public class MergeSort { 
     // Merges two subarrays of arr[]. 
     // First subarray is arr[l..m] 
     // Second subarray is arr[m+1..r] 
@@ -52,7 +54,7 @@ class MergeSort {
     } 
   
     // Function to sort array using merge sort
-    private void sort(int arr[], int l, int r) { 
+    public void sort(int arr[], int l, int r) { 
         if (l < r) { 
             // Find the middle point 
             int m = (l + r) / 2; 

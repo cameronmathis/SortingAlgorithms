@@ -1,5 +1,5 @@
-# BubbleSort
-This the implementation of the Bubble Sort Sorting Algorithm in Java.
+# QuickSort
+This the implementation of the Quick Sort Sorting Algorithm in Java.
 
 ## Table of contents
 * [Algorithm details](#Algorithm-details)
@@ -9,7 +9,7 @@ This the implementation of the Bubble Sort Sorting Algorithm in Java.
 * [Contact](#contact)
 
 ## Algorithm details
-Bubble Sort works by repeatedly swapping the adjacent elements if they are in wrong order. Bubble Sort usually runs in O(n^2) time complexity, but runs in O(n) time complexity if the array is already sorted. It has an auxiliary space complexity of O(1). Bubble sort is a stable sorting algorithm.
+Quick sort works by repeatedly finding the minimum element from an unsorted portion of the array and putting it at the beginning. Quick Sort usually runs in O(nLog(n)) time complexity, but in the worst case (when the partition process always picks greatest or smallest element as pivot) it runs in (n^2) time complexity. Quick sort has a space complexity of O(Log(n)). Quick sort is an unstable sorting algorithm.
 
 ## Setup
 In order to run, clone this repo onto your local machine. Once you have navigated to the project folder, run the command:
