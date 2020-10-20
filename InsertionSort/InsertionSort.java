@@ -1,5 +1,5 @@
 public class InsertionSort {
-    /*Function to sort array using insertion sort*/
+    // Function to sort array using insertion sort
     private void sort(int arr[]) { 
         int n = arr.length; 
         for (int i = 1; i < n; ++i) { 
@@ -17,21 +17,22 @@ public class InsertionSort {
         } 
     } 
   
-    /* A utility function to print array of size n*/
-    private static void printArray(int arr[]) { 
+    // Prints the array 
+    private void printArray(int arr[]) { 
         int n = arr.length; 
-        for (int i = 0; i < n; ++i) 
-            System.out.print(arr[i] + " "); 
-  
+        for (int i=0; i<n; ++i) 
+            System.out.print(arr[i]+" "); 
         System.out.println(); 
     } 
   
-    // Driver method 
+    // Driver code to test above 
     public static void main(String args[]) {
         InsertionSort ob = new InsertionSort(); 
         int arr[] = {3, 2, 5, 1, 4}; 
-        ob.sort(arr); 
-        System.out.println("Sorted array:"); 
-        printArray(arr); 
+        System.out.print("Given Array: "); 
+        ob.printArray(arr); 
+        ob.sort(arr);  
+        System.out.print("Sorted array: "); 
+        ob.printArray(arr); 
     } 
 }

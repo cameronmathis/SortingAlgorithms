@@ -1,4 +1,5 @@
 class SelectionSort { 
+    // Function to sort array using selection sort
     private void sort(int arr[]) { 
         int n = arr.length; 
   
@@ -27,10 +28,12 @@ class SelectionSort {
   
     // Driver code to test above 
     public static void main(String args[]) { 
-        SelectionSort ob = new SelectionSort(); 
+        SelectionSort ob = new SelectionSort();  
         int arr[] = {3, 2, 5, 1, 4}; 
-        ob.sort(arr); 
-        System.out.println("Sorted array:"); 
+        System.out.print("Given Array: "); 
+        ob.printArray(arr); 
+        ob.sort(arr);  
+        System.out.print("Sorted array: "); 
         ob.printArray(arr); 
     } 
 } 
