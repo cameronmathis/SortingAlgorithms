@@ -1,5 +1,5 @@
-# BubbleSort
-This the implementation of the Bubble Sort Sorting Algorithm in Java.
+# InsertionSort
+This the implementation of the Insertion Sort Sorting Algorithm in Java.
 
 ## Table of contents
 * [Algorithm details](#Algorithm-details)
@@ -9,7 +9,7 @@ This the implementation of the Bubble Sort Sorting Algorithm in Java.
 * [Contact](#contact)
 
 ## Algorithm details
-Bubble Sort works by repeatedly swapping the adjacent elements if they are in wrong order. Bubble Sort usually runs in O(n^2) time complexity, but runs in O(n) time complexity if the array is already sorted. It has an auxiliary space complexity of O(1).
+Insertion sort works by splitting the array into sorted and an unsorted parts and then placing values from the unsorted part at the correct position in the sorted part. Insertion Sort runs in O(n^2) time complexity and has an auxiliary space complexity of O(1).
 
 ## Setup
 In order to run, clone this repo onto your local machine. Once you have navigated to the project folder, run the command:

@@ -21,7 +21,7 @@ Project is: _finished_
 
 ## Language details
 Language used: Java </br>
-Version used: 1.8.0_265
+Version used: 11.0.8
 
 ## Contact
 Created by [@cameronmathis](https://github.com/cameronmathis/) - feel free to contact me!
