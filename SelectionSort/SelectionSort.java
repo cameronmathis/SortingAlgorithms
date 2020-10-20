@@ -28,7 +28,7 @@ class SelectionSort {
     // Driver code to test above 
     public static void main(String args[]) { 
         SelectionSort ob = new SelectionSort(); 
-        int arr[] = {1,2,3,4,5}; 
+        int arr[] = {3, 2, 5, 1, 4}; 
         ob.sort(arr); 
         System.out.println("Sorted array:"); 
         ob.printArray(arr); 

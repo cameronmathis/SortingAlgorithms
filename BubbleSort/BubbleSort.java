@@ -24,7 +24,7 @@ class BubbleSort {
     // Driver method to test above 
     public static void main(String args[]) { 
         BubbleSort ob = new BubbleSort(); 
-        int arr[] = {1, 2, 3, 4, 5,}; 
+        int arr[] = {3, 2, 5, 1, 4}; 
         ob.bubbleSort(arr); 
         System.out.println("Sorted array:"); 
         ob.printArray(arr); 
