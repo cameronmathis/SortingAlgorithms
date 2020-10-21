@@ -24,8 +24,9 @@ Implemented:
 ## Setup
 In order to run, clone this repo onto your local machine. Once you have navigated to the project folder, run the command:
 
-	$ ./run.sh [Array Size]
+	$ ./run.sh [Array Size] [Show/Hide Array]
 
+Parameter restraints: Array Size - any integer value </t> Show/Hide Array - the string "show" or the string "hide" (without quotation marks) </br>
 This will print out how long it took each algorithm to sort the same randomly generated array of given size.
 
 ## Status

@@ -29,17 +29,32 @@ public class Main {
 
     // Driver code to show sorting algorithm speed 
     public static void main(String args[]) { 
-        if (args.length != 1)  // test for correct # of args
-            throw new IllegalArgumentException("Parameter: <Array Size>");
+        if (args.length != 2)  // test for correct # of args
+            throw new IllegalArgumentException("Parameter(s): <Array Size> <Show/Hide Array>");
 
         // Create array to sort
         int size = Integer.parseInt(args[0]);
         int seed = (int) System.currentTimeMillis();
         int arr[] = getArray(size, seed);
 
-        System.out.print("Unsorted Array: "); 
-        printArray(arr);
-        System.out.println(); 
+        // Decide is array should be printed to console
+        String showParameter = args[1].toLowerCase();
+        boolean doShowArray;
+        if (showParameter.equals("show")) {
+            doShowArray = true;
+        } else if (showParameter.equals("hide")) {
+            doShowArray = false;
+        } else {
+            throw new IllegalArgumentException("Parameter(s): <Array Size> <Show/Hide Array>");
+        }
+
+        if (doShowArray) {
+            System.out.print("Unsorted Array: "); 
+            printArray(arr); 
+        }
+        System.out.println();
+
+        // Declare variables for measuring time
         long start = 0;
         long finish = 0;
 
@@ -48,7 +63,7 @@ public class Main {
         start = System.nanoTime();
         bubbleSort.sort(arr);
         finish = System.nanoTime();
-        System.out.println("Bubble sort time: " + (finish - start) + "ns");
+        System.out.println("Bubble sort time: " + (finish - start) + " ns");
 
         // Heap sort
         HeapSort heapSort = new HeapSort();
@@ -56,7 +71,7 @@ public class Main {
         start = System.nanoTime();
         heapSort.sort(arr);
         finish = System.nanoTime();
-        System.out.println("Heap sort time: " + (finish - start) + "ns");
+        System.out.println("Heap sort time: " + (finish - start) + " ns");
 
         // Insertion sort
         InsertionSort insertionSort = new InsertionSort();
@@ -64,7 +79,7 @@ public class Main {
         start = System.nanoTime();
         insertionSort.sort(arr);
         finish = System.nanoTime();
-        System.out.println("Insertion sort time: " + (finish - start) + "ns");
+        System.out.println("Insertion sort time: " + (finish - start) + " ns");
 
         // Merge sort
         MergeSort mergeSort = new MergeSort();
@@ -72,7 +87,7 @@ public class Main {
         start = System.nanoTime();
         mergeSort.sort(arr, 0, arr.length - 1); 
         finish = System.nanoTime();
-        System.out.println("Merge sort time: " + (finish - start) + "ns");
+        System.out.println("Merge sort time: " + (finish - start) + " ns");
 
         // Quick sort
         QuickSort quickSort = new QuickSort();
@@ -80,7 +95,7 @@ public class Main {
         start = System.nanoTime();
         quickSort.sort(arr, 0, arr.length - 1); 
         finish = System.nanoTime();
-        System.out.println("Quick sort time: " + (finish - start) + "ns");
+        System.out.println("Quick sort time: " + (finish - start) + " ns");
 
         // Selection sort
         SelectionSort selectionSort = new SelectionSort();
@@ -88,9 +103,12 @@ public class Main {
         start = System.nanoTime();
         selectionSort.sort(arr);
         finish = System.nanoTime();
-        System.out.println("Selection sort time: " + (finish - start) + "ns");
+        System.out.println("Selection sort time: " + (finish - start) + " ns");
 
-        System.out.print("\nSorted array: "); 
-        printArray(arr); 
+        System.out.println();
+        if (doShowArray) {
+            System.out.print("Sorted array: "); 
+            printArray(arr);
+        } 
     } 
 }

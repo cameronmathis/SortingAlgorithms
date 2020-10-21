@@ -2,4 +2,4 @@
 # compile the program in Java
 javac *.java
 # execute the program
-java Main $1
+java Main $1 $2
