@@ -1,5 +1,5 @@
 #!/bin/bash
 # compile the program in Java
-javac *.java
+javac QuickSort.java
 # execute the program
 java QuickSort
