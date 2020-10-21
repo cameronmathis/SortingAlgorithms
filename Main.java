@@ -33,7 +33,14 @@ public class Main {
             throw new IllegalArgumentException("Parameter(s): <Array Size> <Show/Hide Array>");
 
         // Create array to sort
-        int size = Integer.parseInt(args[0]);
+        int size;
+        try {
+            size = Integer.parseInt(args[0]);
+        } catch (Exception e) {
+            throw new IllegalArgumentException("Parameter(s): <Array Size> <Show/Hide Array>");
+        }
+        if (size < 0)
+            throw new IllegalArgumentException("Parameter(s): <Array Size> <Show/Hide Array>");
         int seed = (int) System.currentTimeMillis();
         int arr[] = getArray(size, seed);
 
