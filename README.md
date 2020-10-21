@@ -21,6 +21,11 @@ Implemented:
 * Quick Sort
 * Selection Sort
 
+Need to Implement:
+* Counting Sort
+* Radix Sort
+* Bucket Sort
+
 ## Setup
 In order to run, clone this repo onto your local machine. Once you have navigated to the project folder, run the command:
 
@@ -30,7 +35,7 @@ Parameter restraints: Array Size - any positive integer value | Show/Hide Array 
 This will print out how long it took each algorithm to sort the same randomly generated array of given size.
 
 ## Status
-Project is: _finished_
+Project is: _in progress_
 
 ## Language details
 Language used: Java </br>
