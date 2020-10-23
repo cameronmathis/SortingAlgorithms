@@ -16,7 +16,7 @@ public class Main {
         System.out.println(); 
     }
 
-    // Get an array of radnom numbers and given size
+    // Get an array of random numbers and given size
     private static int[] getArray(int size, int seed) {
         int arr[] = new int[size];
         Random rand = new Random(seed);

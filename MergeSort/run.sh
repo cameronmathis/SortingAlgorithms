@@ -1,5 +1,5 @@
 #!/bin/bash
 # compile the program in Java
-javac MergeSort.java
+javac -d out MergeSort.java
 # execute the program
-java MergeSort
+java -cp out MergeSort.MergeSort

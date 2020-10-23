@@ -1,5 +1,5 @@
 #!/bin/bash
 # compile the program in Java
-javac BubbleSort.java
+javac -d out BubbleSort.java
 # execute the program
-java BubbleSort
+java -cp out BubbleSort.BubbleSort

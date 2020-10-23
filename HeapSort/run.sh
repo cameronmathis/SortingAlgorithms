@@ -1,5 +1,5 @@
 #!/bin/bash
 # compile the program in Java
-javac HeapSort.java
+javac -d out HeapSort.java
 # execute the program
-java HeapSort
+java -cp out HeapSort.HeapSort

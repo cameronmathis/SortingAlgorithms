@@ -1,5 +1,5 @@
 #!/bin/bash
 # compile the program in Java
-javac SelectionSort.java
+javac -d out SelectionSort.java
 # execute the program
-java SelectionSort
+java -cp out SelectionSort.SelectionSort
